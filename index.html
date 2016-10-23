@@ -9,13 +9,13 @@
             padding-top: 200px;
         }
         #body1 {
-            width: 50vw;
+            width: 771px;
             height: 400px;
             background-image: url(http://img.cinemablend.com/cb/e/2/d/2/0/0/e2d200d2fa2b2e68e4e59d9c10970a088ea847cd1bbdb52471d99e89414f40ac.jpg);
             margin-left: 10vw;
         }
         #middle {
-            width: 50vw;
+            width: 771px;
             height: 250px;
             background-color: aqua;
             margin-left: 10vw;
@@ -35,7 +35,7 @@
             margin-top: 120px;
         }
         #middle2 {
-            width: 50vw;
+            width: 771px;
             height: 280px;
             background-color: burlywood;
             margin-left: 10vw; 
@@ -79,7 +79,7 @@
             color: cornflowerblue;
         }
         #middle3 {
-            width: 50vw;
+            width: 771px;
             height: 280px;
             background-color: red;
             margin-left: 10vw; 
@@ -105,7 +105,7 @@
         
         #bottom {
             background-image: url(http://media.bestofmicro.com/K/F/506175/gallery/E3_2015_Mediakit_015_w_600.png);
-            width: 50vw;
+            width: 771px;
             height: 280px;
             margin-left: 10vw; 
             position: absolute;
@@ -126,11 +126,11 @@
             <h3 id= 'name'>CHOCOBIANO</h3>
         </div>
         <div id ='middle2'>
-             <img class = 'boxy' src="http://orig02.deviantart.net/9315/f/2008/308/3/e/pink_chocobo_by_ailux.png">
-             <img class = 'boxy' src="http://files.gamebanana.com/img/ico/sprays/final_fantasy_chocobo_tales_-_gree_2.png">
-             <img class = 'boxy' src="http://files.gamebanana.com/img/ico/sprays/white_chocobo.png">
-             <img class = 'boxy' src="https://a.wattpad.com/useravatar/SecretSanta2015.256.250103.jpg">
-             <img class = 'boxy' src="https://a.wattpad.com/useravatar/ChocoTheChocobo.256.728514.jpg">
+             <img id = 'pinky' class = 'boxy' src="http://orig02.deviantart.net/9315/f/2008/308/3/e/pink_chocobo_by_ailux.png">
+             <img id = 'shiki' class = 'boxy' src="http://files.gamebanana.com/img/ico/sprays/final_fantasy_chocobo_tales_-_gree_2.png">
+             <img id = 'arad' class = 'boxy' src="http://files.gamebanana.com/img/ico/sprays/white_chocobo.png">
+             <img id = 'lammy' class = 'boxy' src="https://a.wattpad.com/useravatar/SecretSanta2015.256.250103.jpg">
+             <img id = 'staxs' class = 'boxy' src="https://a.wattpad.com/useravatar/ChocoTheChocobo.256.728514.jpg">
              <h1 id = 'titulos1'>PINKY</h1>
              <h1 id = 'titulos2'>SHIKI</h1>
              <h1 id = 'titulos3'>ARAD</h1>
@@ -146,7 +146,45 @@
             <h3 id = 'titulo7'>The rest is spagethi, never forgetti</h3>
         </div>
            
-    
+        <script>
+            var my_pinky = document.getElementById('pinky')
+            var my_shiki = document.getElementById('shiki')
+            var my_arad = document.getElementById('arad')
+            var my_lammy = document.getElementById('lammy')
+            var my_staxs = document.getElementById('staxs')
+            var my_titulos1 =document.getElementById('titulos1')
+            var my_titulos2 =document.getElementById('titulos2')
+            var my_titulos3 =document.getElementById('titulos3')
+            var my_titulos4 =document.getElementById('titulos4')
+            var my_titulos5 =document.getElementById('titulos5')
+            var my_box1 = document.getElementById('box1')
+            
+            
+            my_pinky.onclick = function(){
+                my_titulos1.style.color = '#C7F55E';
+                my_box1.style.height = '400px';
+            }
+            my_shiki.onclick = function(){
+                my_titulos2.style.color = '#F5C05E';
+                my_box1.style.width = '400px';
+            }
+            my_arad.onclick = function(){
+                my_titulos3.style.color = '#27BDA2';
+                my_box1.style.borderRadius = '100px';
+            }
+            my_lammy.onclick = function(){
+                my_titulos4.style.color = '#C7F55E';
+                my_box1.style.marginTop = '100px';
+            }
+            my_staxs.onclick = function(){
+                my_titulos5.style.color = '#DD70DF';
+                my_box1.innerHTML ="";
+            }
+        
+        
+        
+        
+        </script>
     
     
     
